@@ -35,4 +35,4 @@ jobs:
     runs-on: ubuntu-22.04
     needs: release
     steps:
-      - run: echo "Bumped Version from ${{ needs.publish.outputs.old-tag }} to ${{ needs.publish.outputs.release-tag }}"
+      - run: echo "Bumped Version from ${{ needs.release.outputs.old-tag }} to ${{ needs.release.outputs.release-tag }}"
