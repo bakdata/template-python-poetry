@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "" # TODO: set name and change {package_name} below
+name = "package-name" # TODO: set name and change {package_name} below
 version = "0.0.0"
 description = ""
 license = "MIT"
