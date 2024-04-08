@@ -4,12 +4,19 @@ repos:
     hooks:
       - id: poetry-install
         name: poetry-install
-        description: run poetry install to install dependencies from the lock file
+        description: install Poetry dependencies from the lock file
         entry: poetry install
         language: python
         pass_filenames: false
         stages: [post-checkout, post-merge]
         always_run: true
+      - id: poetry-check
+        name: poetry-check
+        description: validate Poetry config and dependency lock file
+        entry: poetry check
+        language: python
+        pass_filenames: false
+        files: ^(.*/)?(pyproject\.toml|poetry\.lock)$
       - id: ruff-lint
         name: ruff-lint
         entry: ruff check
