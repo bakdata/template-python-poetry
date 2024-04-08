@@ -33,11 +33,11 @@ jobs:
           poetry-version: ${{ env.poetry-version }}
           working-directory: ${{ env.working-directory }}
 
-      - name: Install dependencies
-        run: poetry install --no-interaction
-
       - name: Check Poetry config and lockfile
         run: poetry run pre-commit run poetry-check --all-files
+
+      - name: Install dependencies
+        run: poetry install --no-interaction
 
       - name: Lint (ruff)
         run: |
