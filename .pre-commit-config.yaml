@@ -4,7 +4,7 @@ repos:
     hooks:
       - id: poetry-check
         name: poetry-check
-        description: run poetry check to validate config
+        description: validate Poetry config and dependency lockfile
         entry: poetry check
         language: python
         pass_filenames: false
