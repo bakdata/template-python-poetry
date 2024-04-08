@@ -2,6 +2,13 @@
 repos:
   - repo: local
     hooks:
+      - id: poetry-check
+        name: poetry-check
+        description: validate Poetry config and dependency lockfile
+        entry: poetry check
+        language: python
+        pass_filenames: false
+        files: ^(.*/)?(pyproject\.toml|poetry\.lock)$
       - id: ruff-lint
         name: ruff-lint
         entry: ruff check
