@@ -19,7 +19,7 @@ repos:
         files: ^(.*/)?(pyproject\.toml|poetry\.lock)$
       - id: ruff-lint
         name: ruff-lint
-        entry: ruff check
+        entry: poetry run ruff check
         args:
           [
             --force-exclude,
@@ -34,14 +34,14 @@ repos:
         require_serial: true # run once for all files
       - id: ruff-format
         name: ruff-format
-        entry: ruff format
+        entry: poetry run ruff format
         args: [--force-exclude, --config, pyproject.toml]
         language: system
         types_or: [python]
         require_serial: true # run once for all files
       - id: pyright
         name: pyright
-        entry: pyright
+        entry: poetry run pyright
         language: system
         types: [python]
         require_serial: true # run once for all files
