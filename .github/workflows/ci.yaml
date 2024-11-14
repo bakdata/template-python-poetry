@@ -44,7 +44,7 @@ jobs:
 
       - name: Lint (ruff)
         run: |
-          if [[ "$RUNNER_OS" == "Linux" && "${{ matrix.format-for-github }}" == "true" ]]
+          if [[ "${{ matrix.format-for-github }}" == "true" ]]
           then
             poetry run ruff check . --config pyproject.toml --output-format=github --no-fix
           else
