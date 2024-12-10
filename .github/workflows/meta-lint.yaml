@@ -1,4 +1,4 @@
-name: Lint CI
+name: Lint the GitHub CI YAMLs
 
 on:
   pull_request:
