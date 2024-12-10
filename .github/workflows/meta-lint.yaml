@@ -1,4 +1,4 @@
-name: Linting of GitHub CI YAMLs
+name: Lint the GitHub CI YAMLs
 
 on:
   pull_request:
