@@ -20,7 +20,7 @@ python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"
-ruff = "^0.7.2"
+ruff = "^0.8.6"
 pyright = {extras = ["nodejs"], version = "^1.1.382"}
 pytest = "^8.3.3"
 pytest-asyncio = "^0.24.0"
