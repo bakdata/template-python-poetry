@@ -1,22 +1,23 @@
-[tool.poetry]
+[project]
 name = "package-name" # TODO: set name and change {package_name} below
 version = "0.0.0"
 description = ""
 license = "MIT"
-authors = ["bakdata"]
+authors = [ { name = "bakdata" } ]
 readme = "README.md" # Could also do ["path/to/README0.md", "path/to/README1.md"]
-
+requires-python = ">=3.10"
+dependencies = [
+  # ...
+]
 # TODO
 # repository = ""
 # documentation = ""
 # keywords = []
 # classifiers = []
 
-# [tool.poetry.scripts]
+# [project.scripts]
 # start = "main:start"
 
-[tool.poetry.dependencies]
-python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.0.1"

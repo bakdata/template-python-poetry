@@ -4,8 +4,14 @@ Short description about the project.
 
 ## Usage
 
+Requires Poetry v2
+
 ```sh
-pip install <package>
+poetry sync
+```
+
+```sh
+poetry add <package>
 ```
 
 ```python
