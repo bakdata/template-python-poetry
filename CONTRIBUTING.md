@@ -9,7 +9,7 @@ We are happy if you want to contribute to this project. If you find any bugs or 
 2. Install dependencies using [Poetry](https://python-poetry.org)
 
 ```sh
-poetry install
+poetry sync
 ```
 
 3. Install the pre-commit hooks for linting and to enforce a consistent code style.

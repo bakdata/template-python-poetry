@@ -5,7 +5,7 @@ repos:
       - id: poetry-install
         name: poetry-install
         description: install Poetry dependencies from the lock file
-        entry: poetry install
+        entry: poetry sync
         language: python
         pass_filenames: false
         stages: [post-checkout, post-merge]
